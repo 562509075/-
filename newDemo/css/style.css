@@ -1,0 +1,542 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+body,textarea,input,select,option {color:#333;font-family:Tahoma,Arial,sans-serif;}
+body {
+	background-color: #222;
+	background-repeat: repeat;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 16px;
+	color: #222;
+}
+a {
+	text-decoration: none;
+	-webkit-transition: 0.15s color ease;
+	-moz-transition: 0.15s color ease;
+	-ms-transition: 0.15s color ease;
+	-o-transition: 0.15s color ease;
+	transition: 0.15s color ease;
+}
+h1, h2 {
+	font-size: 24px;
+}
+ul{
+	list-style: none;
+}
+p{
+	font-family: "Microsoft YaHei";
+	letter-spacing: 0.2rem;
+}
+/*******************左侧导航栏***********************/
+.meny {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+	background: #333;
+	color: #eee;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+.meny a{
+	color: #fff;
+}
+.meny a:hover{
+	color: #f5b016;
+	text-decoration: none;
+}
+.meny ul.con {
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.meny ul.con li {
+	display: inline-block;
+	width: 200px;
+	font-size: 20px;
+	padding: 3px 10px;
+	letter-spacing: 5px;
+}
+.meny ul.con li:before {
+	margin-right: 5px;
+	color: rgba( 255, 255, 255, 0.2 );
+}
+.meny ul.con li .con_li{
+	width: 100%;
+	overflow: hidden;
+}
+.meny ul.con li .con_li_1,
+.meny ul.con li .con_li_2,
+.meny ul.con li .con_li_3{
+	height: 0px;
+	transition: 0.75s;
+	opacity: 0;
+}
+.meny ul.con li .con_li ul li{
+	padding: 1px 15px;
+	height: 30px;
+}
+.meny ul.con li .con_li ul li a{
+	font-size: 18px;
+}
+.meny ul.con li:hover .con_li_1{
+	height: 60px;
+	opacity: 1;
+}
+.meny ul.con li:hover .con_li_2{
+	height: 270px;
+	opacity: 1;
+}
+.meny ul.con li:hover .con_li_3{
+	height: 120px;
+	opacity: 1;
+}
+.meny-arrow {
+	position: absolute;
+	z-index: 10;
+	border: 10px solid transparent;
+	-webkit-transition: opacity 0.4s ease 0.4s;
+	-moz-transition: opacity 0.4s ease 0.4s;
+	-ms-transition: opacity 0.4s ease 0.4s;
+	-o-transition: opacity 0.4s ease 0.4s;
+	transition: opacity 0.4s ease 0.4s;
+}
+.meny-left .meny-arrow {
+	left: 14px;
+	top: 50%;
+	margin-top: -16px;
+	border-left: 16px solid #333;
+}
+.meny-right .meny-arrow {
+	right: 14px;
+	top: 50%;
+	margin-top: -16px;
+	border-right: 16px solid #333;
+}
+.meny-top .meny-arrow {
+	left: 50%;
+	top: 14px;
+	margin-left: -16px;
+	border-top: 16px solid #333;
+}
+.meny-bottom .meny-arrow {
+	left: 50%;
+	bottom: 14px;
+	margin-left: -16px;
+	border-bottom: 16px solid #333;
+}
+.meny-active .meny-arrow {
+	opacity: 0;
+	-webkit-transition: opacity 0.2s ease;
+	-moz-transition: opacity 0.2s ease;
+	-ms-transition: opacity 0.2s ease;
+	-o-transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease;
+}
+/**
+ * Main contents area
+ */
+.contents {
+	background: #eee;
+	padding: 50px 40px;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform-style: preserve-3d;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.contents>article {
+	max-width: 400px;
+}
+.contents p {
+	margin: 10px 0 10px 0;
+	font-size: 16px;
+	line-height: 1.32;
+}
+.contents small {
+	display: block;
+	margin-top: 10px;
+	padding-top: 10px;
+	color: #333;
+	font-size: 0.85em;
+	border-top: 1px dashed #ccc;
+	-webkit-text-size-adjust: none;
+}
+.contents .sharing {
+	position: absolute;
+	bottom: 20px;
+}
+/*******************其他页面部分的标题*******************/
+#titles{
+	background: url(../img/common/bg-childBanner.png);
+	margin-top: -20px;
+}
+#titles ul li{
+	float: left;
+	padding: 0 15px;
+	background: url(../img/common/bg-split-1.png) no-repeat left center;
+}
+#titles ul li:first-child {
+	padding-left: 0;
+	background: none;
+}
+#titles h1{
+	font-size: 2rem;
+	color: #848484;;
+}
+#titles ul li a{
+	color: #848484;
+	text-decoration: none;
+}
+#titles ul li a:hover{
+	color: #339e6c;
+}
+#titles .active a{
+	color: #339e6c;
+}
+/*************首页三块展示部分*****************/
+#show{
+	margin-top: 10px;
+}
+#show .showCon{
+	border: 1px solid #aaaaaa;
+	margin-top: 10px;
+	background: rgba(255, 255, 255, 0.91);
+}
+#show .showCon a{
+	text-decoration: none;
+	color: #222;
+}
+#show ul li .showCon .label{
+	background: rgba(52, 52, 52, 0.68);
+	background-size: 100%;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	text-indent: 1em;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+#show ul li .showCon .label label{
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+	margin-left: -1.5rem;
+	text-align: left;
+}
+#show ul li .showCon .text p{
+	padding: 10px;
+}
+#show .showCon:hover .label{
+	background: rgba(255, 0, 0, 0.69);
+}
+#show .showCon .pic .blur{
+	filter: blur(2px);
+	transition: 0.5s;
+}
+#show .showCon:hover .blur{
+	filter: blur(0px);
+}
+#show .showCon:hover a{
+	color: #0697DA;
+}
+#show .news{
+	background: #336666;
+	height: 100%;
+}
+#show .news .newsLabel{
+	height: 200px;
+}
+#show .news h1{
+	padding: 15px;
+	color: #fff;
+}
+#show .news a{
+	color: #fff;
+	padding: 15px;
+	font-size: 1.5rem;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+}
+#show .news label{
+	margin-top: 5px;
+}
+#show .news .showNews{
+	height: 200px;
+	background: yellow;
+	margin: 20px;
+}
+/**************其他页面正文主体部分*************/
+#show .con{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+#show .con .conLeft{
+	border: 1px solid #e4e4e4;;
+	padding: 0 5px;
+	background: rgba(255, 255, 255, 0.71);
+}
+#show .con .conRight{
+	background: rgba(255, 255, 255, 0.71);
+	border: 1px solid #e4e4e4;
+}
+#show .con .conLeft .con_title{
+	background: url(../img/common/bg-btnStyle-3.png) no-repeat left bottom;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	text-indent: 1.5em;
+	letter-spacing: 1px;
+	color: #fff;
+	padding: 8px 0;
+}
+#show .con .conLeft .con_contents p{
+	font-size: 18px;
+	text-indent: 36px;
+	color: #595757;
+}
+#show .con .conLeft .con_contents h2{
+	font-size: 2.2rem;
+}
+#show .con .conLeft .con_contents h3{
+	font-size: 1.8rem;
+}
+/*************健康超市-自助调理区 表格***************/
+#zizhutiaoli tr td{
+	padding: 5px;
+}
+/*#zizhutiaoli tr td:nth-child(1),
+#zizhutiaoli tr td:nth-child(4){
+	width: 15%;
+}*/
+/**********************************************/
+#show .con .conRight h4{
+	padding: 5px 15px;
+}
+#show .con .conRight ul{
+	padding: 15px;
+}
+#show .con .conRight ul li a{
+	display: block;
+}
+#show .con .conRight ul li{
+	margin-top: 10px;
+}
+#show .con .conRight ul li:first-child{
+	margin-top: 0;
+}
+#show .con .conRight ul li .col-lg-7 p{
+	color: #080808;
+	font-size: 1.3rem;
+	margin: 0;
+}
+#show .con .conRight ul li .col-lg-7 span{
+	font-size: 1.3rem;
+	color: #8c8c8c;
+	margin: 0;
+	bottom: 0;
+}
+#show .con .conRight ul li:hover p{
+	color: orange;
+	transition: 0.5s;
+}
+#show .con .conRight ul li img{
+	width: 100%;
+	transition: 0.5s;
+}
+#show .con .conRight ul li:hover img{
+	box-shadow:  0 5px 15px rgba(0,0,0,0.5);
+}
+#show .con .conRight hr{
+	font-size: 0;
+	height: 1px;
+	background: #e3e3e3;
+	margin: 40px 0;
+}
+#show .con .conRight .con_clock{
+	position: relative;
+	height: 180px;
+}
+#clock{
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+}
+/**************底部******************/
+#info{
+	background: #494C56;
+}
+#info h1{
+	color: #fff;
+	padding: 0 15px;
+}
+#info .infoLeft .link ul{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#info .infoLeft .link ul li a{
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+#info .infoLeft .link ul li a span{
+	text-align: center;
+	padding-top: 4px;
+	margin-left: 9px;
+	color: #ddd;
+}
+#info .infoLeft .link ul li img{
+	transition: 0.5s;
+}
+#info .infoLeft .link ul li:hover img{
+	box-shadow: 5px 10px 25px rgba(0,0,0,0.8);
+}
+#info .infoLeft .link ul li:hover span{
+	color: #008b50;
+}
+#info .infoCenter p{
+	padding: 0 15px;
+	color: #ddd;
+	font-size: 2rem;
+}
+#info .infoRight .video{
+	position: relative;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 0 20px;
+}
+#info .infoRight .video a{
+	background: url(../img/index/ico-player.png) no-repeat center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+#info .infoRight .video:hover{
+	box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.44);
+}
+#info .infoRight .video #player{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+/***************集团电话部分*******************/
+/*#phone{
+	background: #494C56;
+}
+#phone p{
+	font-size: 6rem;color: #f0d926;clear: both;letter-spacing: 35px;text-align: center
+}*/
+/******************底部*********************/
+footer{
+	background: #494C56;
+}
+footer .bottomLeft a{
+	display: block;
+	text-align: center;
+}
+footer .bottomLeft img{
+	width: 120px;
+	height: 125px;
+}
+footer .bottomCenter ul{
+	padding: 10px;
+	text-align: center;
+}
+footer .bottomCenter ul li a{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+footer .bottomCenter ul li a:hover{
+	color: #008b50;
+	text-decoration: underline;
+}
+footer .bottomCenter .text{
+	text-align: center;
+	color: #ddd;
+}
+footer .bottomRight a{
+	text-align: center;
+	display: block;
+	padding-bottom: 10px;
+}
+footer .bottomRight a img{
+	padding-top: 10px;
+	text-align: center;
+}
+/**************右侧悬浮栏*********************/
+#fix{
+	position: fixed;
+	bottom: 50px;
+	right: 15px;
+	height: 160px;
+	width: 40px;
+	background: #ddd;
+}
+#fix ul li{
+	height: 40px;
+	border: 1px solid silver;
+	cursor: pointer;
+}
+#fix ul .liuyan a{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url("../img/common/liuyan_btn.png")no-repeat top;
+	background-size: 100%;
+	transition: 0.5s;
+}
+#fix ul .liuyan a:hover{
+	background: url("../img/common/liuyan_btn.png")no-repeat bottom;
+}
+#fix ul .wechat a{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url("../img/common/wechat_btn.png")no-repeat top;
+	background-size: 100%;
+	transition: 0.5s;
+}
+#fix ul .wechat a:hover{
+	background: url("../img/common/wechat_btn.png")no-repeat bottom;
+}
+#fix ul .qq a{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url("../img/common/qq_btn.png")no-repeat top;
+	background-size: 100%;
+	transition: 0.5s;
+}
+#fix ul .qq a:hover{
+	background: url("../img/common/qq_btn.png")no-repeat bottom;
+}
+#fix ul .top a{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url("../img/common/top_btn.png")no-repeat top;
+	background-size: 100%;
+	transition: 0.5s;
+}
+#fix ul .top a:hover{
+	background: url("../img/common/top_btn.png")no-repeat bottom;
+}
+/*
+@media screen and (max-width: 375px) {
+
+}*/

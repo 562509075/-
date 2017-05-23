@@ -1,0 +1,18 @@
+兼容IE8
+<!--[if lt IE 9]><script src="js/comp/ie8-responsive-file-warning.js"></script><![endif]-->
+
+让IE9以下版本支持html5标签 和 css3样式
+<!--[if lt IE 9]>
+  <script src="js/comp/html5shiv.min.js"></script>
+  <script src="js/comp/respond.js"></script>
+<![endif]-->
+
+让IE9以下版本支持placeholder属性
+<!--[if lt IE 10]>
+  <script src="js/jquery.placeholder.min.js"></script>
+<![endif]-->
+
+让IE9以下版本支持插件的单选复选
+<!--[if lt IE 9]>
+  <link rel="stylesheet" href="css/sky-forms-ie8.css">
+<![endif]-->	
