@@ -52,6 +52,9 @@ p{
 	color: #f5b016;
 	text-decoration: none;
 }
+.meny .active{
+	color: #f5b016;
+}
 .meny ul.con {
 	margin-top: 30px;
 	margin-left: 50px;
@@ -271,9 +274,7 @@ p{
 	margin-top: 5px;
 }
 #show .news .showNews{
-	height: 200px;
-	background: yellow;
-	margin: 20px;
+	margin: 20px 0px;
 }
 /**************其他页面正文主体部分*************/
 #show .con{
@@ -301,7 +302,7 @@ p{
 }
 #show .con .conLeft .con_contents p{
 	font-size: 18px;
-	text-indent: 36px;
+	text-indent: 41px;
 	color: #595757;
 }
 #show .con .conLeft .con_contents h2{
@@ -318,6 +319,48 @@ p{
 #zizhutiaoli tr td:nth-child(4){
 	width: 15%;
 }*/
+/*************医疗产业 医疗器械*******************/
+#qixie{
+	height: 680px;
+	overflow-y:auto;
+	overflow-x: hidden;
+}
+#qixie li{
+	padding: 5px;
+}
+#qixie li a{
+	display: block;
+}
+#qixie li .col-md-3 .image{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: 1px solid silver;
+}
+#qixie li .col-md-3 .image:hover{
+	border: 2px solid #df7615;
+}
+#qixie li .col-md-3 img{
+	transition: 0.3s;
+}
+#qixie li .col-md-3 img:hover{
+	transform:scale(1.2);
+}
+#qixie li .col-md-9 .text span{
+	font-size: 18px;
+	color: #080808;
+	transition: 0.3s;
+}
+#qixie li .col-md-9 .text p{
+	color: #656565;
+	transition: 0.3s;
+}
+#qixie li .col-md-9 .text:hover p{
+	color: #008b50;
+}
+#qixie li .col-md-9 .text:hover span{
+	color: #df7615;
+}
 /**********************************************/
 #show .con .conRight h4{
 	padding: 5px 15px;
@@ -370,6 +413,64 @@ p{
 	position: absolute;
 	left: 50%;
 	margin-left: -75px;
+}
+/********项目共享 康养旅游城项目*********/
+.project li.acprojecttive{
+	background: url(../img/common/icon-sj_.jpg) no-repeat left 5px;
+}
+.project li{
+	padding-left: 23px;
+	margin-top: 15px;
+	background: url(../img/common/icon-sj.jpg) no-repeat left 5px;
+}
+.project li a {
+	padding: 0 8px;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	display: block;
+	background: #339e6c;
+	border: 1px solid #339e6c;
+	text-decoration: none;
+}
+.project li.active a{
+	color: #339e6c;
+	background: none;
+}
+.project li.active a p{
+	display: block;
+}
+.project li a p {
+	margin: 5px 0 !important;
+	font-weight: normal;
+	line-height: 1.7em;
+	color: #898989;
+	cursor: default;
+	padding-left: 0;
+	padding-right: 0;
+	letter-spacing: 1px;
+	font-size: 18px;
+	display: none;
+}
+/**************新闻******************/
+#newsShow{
+	padding: 5px;
+}
+#newsShow li{
+	margin-top: 10px;
+}
+#newsShow a{
+	display: block;
+}
+#newsShow .newsShow_right .title{
+	font-size: 18px;
+}
+#newsShow .newsShow_right .text_left{
+	color: #6a6a6a;
+}
+#newsShow .newsShow_right .text_right{
+	color: #6a6a6a;
+	float: right;
 }
 /**************底部******************/
 #info{
@@ -433,6 +534,78 @@ p{
 	top: 0;
 	display: none;
 }
+/***************联系我们 地图******************/
+#dituContent{
+	width:100%;
+	height:500px;
+	margin-top: 20px;
+	border:#ccc solid 1px;
+	overflow-x: auto
+}
+/* 定义keyframe动画，命名为blink */
+
+@keyframes blink{
+	0%{opacity: 1;}
+	50%{opacity: 1;}
+	50.01%{opacity: 0;} /* 注意这里定义50.01%立刻透明度为０，可以设置闪烁效果 */
+	100%{opacity: 0;}
+}
+
+/* 添加兼容性前缀 */
+
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+/* 定义blink类*/
+.blink{
+	animation: blink .95s linear infinite;
+	/* 其它浏览器兼容性前缀 */
+	-webkit-animation: blink .95s linear infinite;
+	-moz-animation: blink .95s linear infinite;
+	-ms-animation: blink .95s linear infinite;
+	-o-animation: blink .95s linear infinite;
+	color: #dd4814;
+	font-size: 42px;
+	letter-spacing: 2px;
+	text-align: center;
+	width: 100%;
+}
+@media screen and (max-width: 600px){
+	.blink{
+		display: none;
+	}
+	#dituContent{
+		width:100%;
+		height:300px;
+		margin-top: 20px;
+		border:#ccc solid 1px;
+		overflow-x: auto
+	}
+}
 /***************集团电话部分*******************/
 /*#phone{
 	background: #494C56;
@@ -486,6 +659,8 @@ footer .bottomRight a img{
 	height: 160px;
 	width: 40px;
 	background: #ddd;
+
+	display: none;
 }
 #fix ul li{
 	height: 40px;

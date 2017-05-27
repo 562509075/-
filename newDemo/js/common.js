@@ -40,3 +40,8 @@ window.onload = function(){
         },30);
     }
 };
+
+/******************项目介绍部分特效***********************/
+$('.project li').click(function () {
+    $(this).toggleClass('active');
+});

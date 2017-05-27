@@ -1,10 +1,332 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="qll">
+    <link rel="shortcut icon" type="image/x-icon" href="img/common/favicon.ico">
+    <meta name="keywords" content="中科恒健集团">
+    <meta name="description" content="中科恒健集团">
+    <title>新闻资讯-中科恒健集团</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css"></style>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<!-- 左侧导航部分 -->
+<div class="meny">
+    <a href="index.html"><img src="img/common/logo1.png" alt="logo" width="50%" style="position: relative;left: 50%;margin-left: -25%" title="主页"/></a>
+    <ul class="con">
+        <li>
+            <a href="about-us.html">集团概况</a>
+            <div class="con_li con_li_1">
+                <ul>
+                    <li><a href="about-us.html">集团介绍</a></li>
+                    <li><a href="licheng.html">发展历程</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="wenquankangyang.html">旗下产业</a>
+            <div class="con_li con_li_2">
+                <ul>
+                    <li><a href="wenquankangyang.html">恒健康养</a></li>
+                    <li><a href="kangti.html">恒健康体</a></li>
+                    <li><a href="biguiyuan.html">康养公寓</a></li>
+                    <li><a href="jujiayanglao.html">居家养老</a></li>
+                    <li><a href="jiyin.html">精准医疗</a></li>
+                    <li><a href="kangyangyou.html">康养旅游</a></li>
+                    <li><a href="town.html">康养小镇</a></li>
+                    <li><a href="food.html">食品养生</a></li>
+                    <li><a href="yiliao.html">医疗产业</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="lvyoucheng_join.html">项目共享</a>
+            <div class="con_li con_li_3">
+                <ul>
+                    <li><a href="lvyoucheng_join.html">康养旅游城</a></li>
+                    <li><a href="jujiayanglao_join.html">居家养老</a></li>
+                    <li><a href="dakeshi_join.html">大科室建设</a></li>
+                    <li><a href="tuoguan.html">项目托管</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="healthy-garden.html">健康家园</a></li>
+        <li><a href="http://www.hzdzcy.com/index.php" target="_blank">医疗商城</a></li>
+        <li><a href="news.html">新闻资讯</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</div>
+<div class="meny-arrow"></div>
+<div class="contents">
+    <nav class="nav navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"><img src="img/common/logo2.png" alt="logo" width="120"/></a>
+                <button data-target="#subNav" data-toggle="collapse" type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="subNav">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                    <li class="dropdown">
+                        <a href="about-us.html" class="dropdown-toggle" data-toggle="dropdown">集团概况<span class="caret" style="margin-top: -3px"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about-us.html">集团介绍</a></li>
+                            <li><a href="licheng.html">发展历程</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="wenquankangyang.html" class="dropdown-toggle" data-toggle="dropdown">旗下产业<span class="caret" style="margin-top: -3px"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="wenquankangyang.html">恒健康养</a></li>
+                            <li><a href="kangti.html">恒健康体</a></li>
+                            <li><a href="biguiyuan.html">康养公寓</a></li>
+                            <li><a href="jujiayanglao.html">居家养老</a></li>
+                            <li><a href="jiyin.html">精准医疗</a></li>
+                            <li><a href="kangyangyou.html">康养旅游</a></li>
+                            <li><a href="town.html">康养小镇</a></li>
+                            <li><a href="food.html">食品养生</a></li>
+                            <li><a href="yiliao.html">医疗产业</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">项目共享<span class="caret" style="margin-top: -3px"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lvyoucheng_join.html">康养旅游城</a></li>
+                            <li><a href="jujiayanglao_join.html">居家养老</a></li>
+                            <li><a href="dakeshi_join.html">大科室建设</a></li>
+                            <li><a href="tuoguan.html">项目托管</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="healthy-garden.html">健康家园</a></li>
+                    <li><a href="http://www.hzdzcy.com/index.php" target="_blank">医疗商城</a></li>
+                    <li class="active"><a href="news.html">新闻资讯</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="tel:4006838881"><span class="glyphicon glyphicon-earphone"></span> 电话</a></li>
+                    <li><a href="contact.html"><span class="glyphicon glyphicon-globe"></span> 联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--图片展示部分-->
+    <div class="row">
+        <div class="col-md-12" id="banner">
+            <img src="img/news/banner.png" alt="banner" width="100%"/>
+        </div>
+    </div>
+    <!--底部线-->
+    <div class="row">
+        <div class="col-md-12">
+            <!--<div class="bg-shadow"></div>-->
+            <img src="img/common/bg-shadow.png" alt="阴影线" width="100%" style="margin-top: -21px"/>
+            <div id="titles">
+                <div class="container">
+                    <h1>
+                        中科恒健
+                        <span>ZHONGKE HENGJIAN</span>
+                        <a href="javascript:void(0)">
+                            <img src="img/common/ico-forward.png"/>
+                        </a>
+                    </h1>
+                    <ul>
+                        <li class="active"><a href="news.html">集团新闻</a></li>
+                        <li><a href="hangyedongtai.html">行业动态</a></li>
+                        <li><a href="huizhankuaixun.html">会展快讯</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--正文主体部分-->
+    <div class="container" id="show">
+        <div class="con">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="conLeft">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="con_title">
+                                    <span>新闻资讯</span>
+                                    <br/>
+                                    <label>News</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="con_contents">
+                            <br/>
+                            <ul id="newsShow">
+                                <li class="row">
+                                    <div class="col-md-4">
+                                        <a href="news_kangyanggongyu.html"><img src="img/news/2.jpg" alt="恒健康养公寓" width="100%"/></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="newsShow_right">
+                                            <a href="news_kangyanggongyu.html">
+                                                <span class="title">恒健康养公寓：烟台基地，重庆基地，海南基地即将运营！ </span>
+                                                <p style="font-size: 15px;text-indent: 33px">
+                                                    恒健康养公寓位于山东烟台海阳“碧桂园十里金滩”是国家十二五重点规划的半岛蓝色经济圈核心区丁字湾，地处海洋文化旅游新城中心，南面黄海，西邻跨海大桥，紧邻滨海公路，十里金沙海岸。
+                                                </p>
+                                            </a>
+                                            <span class="text_left">2017/3/28</span>
+                                            <span class="text_right">阅读（256）</span>
+                                        </div>
+                                     </div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-md-4">
+                                        <a href="news_jiepai.html"><img src="img/news/揭牌仪式.jpg" alt="揭牌仪式" width="100%"/></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="newsShow_right">
+                                            <a href="news_jiepai.html">
+                                                <span class="title">中国军创示范基地在恒健海棠湾康养城举行揭牌仪式</span>
+                                                <p style="font-size: 15px;text-indent: 33px">
+                                                    2017年3月18日由中国转业军人福利基金委员会、山东军汇实业股份有限公司进行战略合作共同成立的中国转业军人福利基金委员会山东示范基地在恒健海棠湾康养旅游城城举行了揭牌仪式。
+                                                </p>
+                                            </a>
+                                            <span class="text_left">2017/3/18</span>
+                                            <span class="text_right">阅读（283）</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-md-4">
+                                        <a href="news_wandianqidong.html"><img src="img/news/121.png" alt="万店启动盛典" width="100%"/></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="newsShow_right">
+                                            <a href="news_wandianqidong.html">
+                                                <span class="title">恒健·健康云管家 万店启动盛典</span>
+                                                <p style="font-size: 15px;text-indent: 33px">
+                                                    恒健·健康云管家万店启动盛典暨中国首届新社区创业模式高峰论坛在恒健海棠湾康养旅游城隆重举行。百余名来自政府、医院、医疗行业、传媒业等领域的管理者及优秀代表齐聚一堂，围绕“什么才是适合中国国情的养老模式？”进行了巅峰论道。
+                                                </p>
+                                            </a>
+                                            <span class="text_left">2017/3/12</span>
+                                            <span class="text_right">阅读（225）</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="conRight">
+                        <h4>云管家链接</h4>
+                        <ul class="piclist">
+                            <li style="text-align: center">
+                                <a href="http://116.1.214.29:9882/" target="_blank">
+                                    <img src="img/business/yunguanjia0.png" alt="健康云管家" width="200" height="200" title="健康云管家"/>
+                                </a>
+                                <br/>
+                                <span class="ytext">健康云管家</span>
+                            </li>
+                            <li style="text-align: center">
+                                <a href="http://116.1.214.29:9883/" target="_blank">
+                                    <img src="img/business/yunshangcheng.png" alt="健康云管家商城" width="200" height="200" title="健康云管家商城"/>
+                                </a>
+                                <br/>
+                                <span class="ytext">健康云管家商城</span>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="con_clock">
+                                    <canvas id="clock" height="150px" width="150px">
+                                        该浏览器不支持canvas，请更换浏览器重试
+                                    </canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <footer>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="bottomLeft">
+                        <a href="index.html"><img src="img/common/logo1.png" alt="logo" title="主页"/></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="bottomCenter">
+                        <ul class="row">
+                            <li class="col-md-2"><a href="about-us.html">集团概况</a></li>
+                            <li class="col-md-2"><a href="wenquankangyang.html">旗下产业</a></li>
+                            <li class="col-md-2"><a href="lvyoucheng_join.html">项目共享</a></li>
+                            <li class="col-md-2"><a href="news.html">新闻资讯</a></li>
+                            <li class="col-md-2"><a href="contact.html">联系我们</a></li>
+                            <li class="col-md-2"><a href="legal-statement.html">法律声明</a></li>
+                        </ul>
+                        <div class="text">
+                            <p>版权所有：中科恒健集团</p>
+                            <p>
+                                电话：400-683-8881 企业邮箱：zonk888@163.com &nbsp;&nbsp;<br/>
+                                鲁ICP备11008778号
+                                <a href="http://www.cnzz.com/stat/website.php?web_id=5428666" target="_blank" title="站长统计"><img style="margin-left: 3px;margin-top: 5px" border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif"></a>
+                                <a href="http://tongji.baidu.com/hm-web/welcome/ico?s=9dd65c158147d11079d788c32d309659" target="_blank"><img border="0" src="http://eiv.baidu.com/hmt/icon/21.gif" width="20" height="20"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bottomRight">
+                        <a><img src="img/common/code.jpg" alt="二维码" width="120" height="120"/></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!--右侧悬浮栏-->
+<div id="fix">
+    <ul>
+        <li class="liuyan"><a></a></li>
+        <li class="wechat"><a></a></li>
+        <li class="qq"><a></a></li>
+        <li class="top"><a id="btn_top"></a></li>
+    </ul>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/meny.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/common.js"></script>
+<script>
+    /*导航*/
+    var meny = Meny.create({
+        menuElement: document.querySelector( '.meny' ),
+        contentsElement: document.querySelector( '.contents' ),
+        position: Meny.getQuery().p || 'left',
+        height: 200,
+        width: 260,
+        threshold: 40,
+        mouse: true,
+        touch: true
+    });
+    if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+        var contents = document.querySelector( '.contents' );
+        contents.style.padding = '0px';
+        contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+    }
+</script>
+<!-- 代码部分end -->
 </body>
 </html>

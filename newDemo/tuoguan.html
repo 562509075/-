@@ -1,10 +1,534 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="qll">
+    <link rel="shortcut icon" type="image/x-icon" href="img/common/favicon.ico">
+    <meta name="keywords" content="中科恒健集团">
+    <meta name="description" content="中科恒健集团">
+    <title>项目托管-项目共享-中科恒健集团</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css"></style>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<!-- 左侧导航部分 -->
+<div class="meny">
+    <a href="index.html"><img src="img/common/logo1.png" alt="logo" width="50%" style="position: relative;left: 50%;margin-left: -25%" title="主页"/></a>
+    <ul class="con">
+        <li>
+            <a href="about-us.html">集团概况</a>
+            <div class="con_li con_li_1">
+                <ul>
+                    <li><a href="about-us.html">集团介绍</a></li>
+                    <li><a href="licheng.html">发展历程</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="wenquankangyang.html">旗下产业</a>
+            <div class="con_li con_li_2">
+                <ul>
+                    <li><a href="wenquankangyang.html">恒健康养</a></li>
+                    <li><a href="kangti.html">恒健康体</a></li>
+                    <li><a href="biguiyuan.html">康养公寓</a></li>
+                    <li><a href="jujiayanglao.html">居家养老</a></li>
+                    <li><a href="jiyin.html">精准医疗</a></li>
+                    <li><a href="kangyangyou.html">康养旅游</a></li>
+                    <li><a href="town.html">康养小镇</a></li>
+                    <li><a href="food.html">食品养生</a></li>
+                    <li><a href="yiliao.html">医疗产业</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="lvyoucheng_join.html" class="active">项目共享</a>
+            <div class="con_li con_li_3" style="height: 120px;opacity: 1">
+                <ul>
+                    <li><a href="lvyoucheng_join.html">康养旅游城</a></li>
+                    <li><a href="jujiayanglao_join.html">居家养老</a></li>
+                    <li><a href="dakeshi_join.html">大科室建设</a></li>
+                    <li><a href="tuoguan.html" class="active">项目托管</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="healthy-garden.html">健康家园</a></li>
+        <li><a href="http://www.hzdzcy.com/index.php" target="_blank">医疗商城</a></li>
+        <li><a href="news.html">新闻资讯</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</div>
+<div class="meny-arrow"></div>
+<div class="contents">
+    <nav class="nav navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"><img src="img/common/logo2.png" alt="logo" width="120"/></a>
+                <button data-target="#subNav" data-toggle="collapse" type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="subNav">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                    <li class="dropdown">
+                        <a href="about-us.html" class="dropdown-toggle" data-toggle="dropdown">集团概况<span class="caret" style="margin-top: -3px"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about-us.html">集团介绍</a></li>
+                            <li><a href="licheng.html">发展历程</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="wenquankangyang.html" class="dropdown-toggle" data-toggle="dropdown">旗下产业<span class="caret" style="margin-top: -3px"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="wenquankangyang.html">恒健康养</a></li>
+                            <li><a href="kangti.html">恒健康体</a></li>
+                            <li><a href="biguiyuan.html">康养公寓</a></li>
+                            <li><a href="jujiayanglao.html">居家养老</a></li>
+                            <li><a href="jiyin.html">精准医疗</a></li>
+                            <li><a href="kangyangyou.html">康养旅游</a></li>
+                            <li><a href="town.html">康养小镇</a></li>
+                            <li><a href="food.html">食品养生</a></li>
+                            <li><a href="yiliao.html">医疗产业</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">项目共享<span class="caret" style="margin-top: -3px"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lvyoucheng_join.html">康养旅游城</a></li>
+                            <li><a href="jujiayanglao_join.html">居家养老</a></li>
+                            <li><a href="dakeshi_join.html">大科室建设</a></li>
+                            <li class="active"><a href="tuoguan.html">项目托管</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="healthy-garden.html">健康家园</a></li>
+                    <li><a href="http://www.hzdzcy.com/index.php" target="_blank">医疗商城</a></li>
+                    <li><a href="news.html">新闻资讯</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="tel:4006838881"><span class="glyphicon glyphicon-earphone"></span> 电话</a></li>
+                    <li><a href="contact.html"><span class="glyphicon glyphicon-globe"></span> 联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--图片展示部分-->
+    <div class="row">
+        <div class="col-md-12" id="banner">
+            <img src="img/join/banner.jpg" alt="banner" width="100%"/>
+        </div>
+    </div>
+    <!--底部线-->
+    <div class="row">
+        <div class="col-md-12">
+            <!--<div class="bg-shadow"></div>-->
+            <img src="img/common/bg-shadow.png" alt="阴影线" width="100%" style="margin-top: -21px"/>
+            <div id="titles">
+                <div class="container">
+                    <h1>
+                        中科恒健
+                        <span>ZHONGKE HENGJIAN</span>
+                        <a href="javascript:void(0)">
+                            <img src="img/common/ico-forward.png"/>
+                        </a>
+                    </h1>
+                    <ul>
+                        <li class="active"><a href="lvyoucheng_join.html"><b>项目共享</b></a></li>
+                        <li><a href="lvyoucheng_join.html">康养旅游城</a></li>
+                        <li><a href="jujiayanglao_join.html">居家养老</a></li>
+                        <li><a href="dakeshi_join.html">大科室建设</a></li>
+                        <li class="active"><a href="tuoguan.html">项目托管</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--正文主体部分-->
+    <div class="container" id="show">
+        <div class="con">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="conLeft">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="con_title">
+                                    <span>项目共享</span>
+                                    <br/>
+                                    <label>Share</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="con_contents">
+                            <h1 style="text-align: center;color: #006633">项目托管</h1>
+                            <hr/>
+                            <ul class="project">
+                                <li class="active">
+                                    <a href="javascript:void(0)">
+                                        健康小屋
+                                        <p style="text-indent: 0">
+                                            <b>恒健社区健康小屋的创业优势</b>
+                                            <br/>
+                                            <b style="color: orange">房租成本低廉</b>
+                                            <br/>
+                                            创业初期一般创业者都面临巨大的资金压力，商业街高昂的房租会让创业者望而却步，而恒健社区小屋只需要一间普通的两居、三居简单装修后就可以顺利开展。
+                                            <br/>
+                                            <b style="color: orange">人工成本低</b>
+                                            <br/>
+                                            近几年中国劳动力成本的不断提高让很多企业背负了沉重的负担，家庭式经营、自动化设备提供服务节省了大量的人力，可以充分利用家庭成员的零散时间节省用工费用。
+                                            <br/>
+                                            <b style="color: orange">项目优势</b>
+                                            <br/>
+                                            恒健康体利用集团多年从事医疗、养生的临床经验，配合德国、欧洲、韩国最新的亚健康调理、美容设备和技术，在大量市场调研、运营的基础上合理搭配出六大特色服务项目，包括德国慢病调理、女子青春保鲜、中医艾灸调理、韩国皮肤管理、法国魔浴调理、纳米波藏浴调理，服务成本低，利润可达90%以上。
+                                            <br/>
+                                            <b style="color: orange">营销优势</b>
+                                            <br/>
+                                            好的项目需要好的营销方式才能带来大量客源，中科恒健医疗集团董事长王广众先生在总结了改革开放三十年来中国商业的发展历程，结合当代移动古莲时代最先进的大数据营销、微营销等模式，独创了股东式营销、免费时代营销等最具实战价值的营销方式，并免费传授给与集团合作的创业伙伴。
+                                            <br/><br/>
+                                            <b style="font-size: 20px">加盟政策</b>
+                                            <br/>
+                                            <span style="font-size: 16px">加盟方式：加盟费43万（公司不占股份</span>
+                                            <br/>
+                                            <span style="font-size: 16px">合作方式：合作费18.8万（公司占30%股份，每月分红）</span>
+                                            <br/>
+                                            <span style="font-size: 16px">房型：普通住宅，100-200平方米</span>
+                                            <br/>
+                                            <span style="font-size: 16px">加盟方式：加盟费43万（公司不占股份</span>
+                                            <br/>
+                                            <b style="font-size: 20px">投资分析</b>
+                                            <br/>
+                                            <span style="font-size: 16px">满荷营业额计算：</span>
+                                            <br/>
+                                            <span style="font-size: 16px">1*8*398+1*10*258+2*10*128+1*10*380+1*8*128+2*8*158+2*8*128=19704元/日</span>
+                                            <br/>
+                                            <span style="font-size: 16px">试营业1个月，设备利用率5%，消费折扣30%计算：</span>
+                                            <br/>
+                                            <span style="font-size: 16px">19704*0.05*0.3=295.56元/日</span>
+                                            <br/>
+                                            <span style="font-size: 16px">正式营业前3个月，设备利用率10%，消费折扣35%计算：</span>
+                                            <br/>
+                                            <span style="font-size: 16px">19704*0.1*0.35=689.64元/日</span>
+                                            <br/>
+                                            <span style="font-size: 16px">营业4-6个月。设备利用率25%，消费折扣40%计算：</span>
+                                            <br/>
+                                            <span style="font-size: 16px">19704*0.25*0.4=1970.4元/日</span>
+                                            <br/>
+                                            <span style="font-size: 16px">营业7-12个月。设备利用率40%，消费折扣50%计算：</span>
+                                            <br/>
+                                            <span style="font-size: 16px">19704*0.4*0.5=3940.8元/日</span>
+                                            <br/>
+                                            <span style="font-size: 16px">正式营业前3个月，每个月的总收入：</span>
+                                            <br/>
+                                            <span style="font-size: 16px">689.64*30=20689.2元/月</span>
+                                            <br/>
+                                            <span style="font-size: 16px">营业4-6个月，每个月的总收入：</span>
+                                            <br/>
+                                            <span style="font-size: 16px">1970.4*30=59112元/月</span>
+                                            <br/>
+                                            <span style="font-size: 16px">营业7-12个月，每个月的总收入：</span>
+                                            <br/>
+                                            <span style="font-size: 16px">3940.8*30=118224元/月</span>
+                                            <br/>
+                                            <span style="font-size: 16px">第一年收益（不含房租、人工、水电）</span>
+                                            <br/>
+                                            <span style="font-size: 16px">前3个月：20689.2*3=62067.6元</span>
+                                            <br/>
+                                            <span style="font-size: 16px">4-6个月：59112*3=177336元</span>
+                                            <br/>
+                                            <span style="font-size: 16px">7-12个月：118224*3=354672元</span>
+                                            <br/>
+                                            <span style="font-size: 16px">总计：534075.6元</span>
+                                            <br/>
+                                            <span style="font-size: 16px;color: #3072de">从上述结果可以看出，全部投资在6个月之内可以全部收回。</span>
+                                            <br/>
+                                            <span style="font-size: 16px;color: #3072de">按每年增长20%的保守估计，第二年毛收入可达到180万元/年。</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        健康会所
+                                        <p style="text-indent: 0">
+                                            <b style="font-size: 20px">加盟条件：</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 具有独立民事行为能力，认同并积极配合公司的管理模式、经营模式，服从公司管理，积极配合公司的市场运作，遵纪守法，积极投入恒健康体事业；具备一定的经济实力，有良好的信誉和务实认真的事业态度和积极向上的积极心态；真诚务实、有上进心、事业心、创造力和创业精神。</span>
+                                            <br/>
+                                            <b style="font-size: 20px">加盟流程:</b>
+                                            <br/>
+                                            <b style="font-size: 18px">一、咨询我们</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 详细浏览公司网站，提交加盟申请或给我们留言，或者直接与公司取得联系进行详细咨询，加盟咨询热线：400-686-8881 </span>
+                                            <br/>
+                                            <b style="font-size: 18px">二、初步达成合作意向</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 在与公司联系并初步确定加盟意向后，可前来公司考察参观，对恒健康体进一步的深入了解。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px"> 三、交纳预付定金</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 在全面了解恒健康体认同我们的发展理念后，签署预付定金合同，并交纳定金。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px">四、实地店面考察</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 办理好相关手续后，公司派遣专业考察人员到您当地对候选店址进行评估，对周边环境进行综合分析和对店面内部结构布局合理设计。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px">五、签订正式合同</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 在公司对店面综合考察评估并确定适合开店后，来公司签订正式经营加盟合同；支付品牌加盟费，进入开店筹备阶段。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px"> 六、店面装修设计</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 考察结束后，公司针对店面的实际情况，给您设计店面平面布局图，店内风格也可以在当地找人设计。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px">七、店面装修施工</b>
+                                            <br/>
+                                            <span style="font-size: 16px">装修平面图纸审定后，加盟商可在当地找施工单位进行装修施工。装修施工前应广泛联系装修公司，设计图纸完成后再进行工程招标，选择合适的施工方，并开始工程施工。装修竣工后，通过消防部门验收合格后方可投入运营。</span>
+                                            <br/>
+                                            <b style="font-size: 18px">八、人员招聘</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 在装修竣工前15天左右，通过加盟商申请，公司派专业技术培训人员前往当地带店，主持员工招聘，选择合适场所展开店务管理等方面的系统培训。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px">九、采购物品</b>
+                                            <br/>
+                                            <span style="font-size: 16px">在公司带店人员的协助下，制定店内所需要辅料的购置清单，在当地进行订购。</span>
+                                            <br/>
+                                            <b style="font-size: 18px">十、制定管理制度</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 由公司带店管理人员主持，在公司统一制定的制度文本框架内，制定店面管理的各项规章制度，进行岗位划分，责任到人，严格管理。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px">十一、办理营业手续</b>
+                                            <br/>
+                                            <span style="font-size: 16px">在当地有关部门办理营业执照，进行税务登记，同时办理消防、城管、卫生、劳动保险等相关手续。分店必须严格按照国家规定的相关政策进行经营，不得违反各项法律法规和有关条令条例，发生此类问题恒健康体公司不承担任何责任。</span>
+                                            <br/>
+                                            <b style="font-size: 18px">十二、市场推广</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 公司培训人员结合当地实际情况，策划合理可行的宣传活动，还可以在当地媒体上进行广告宣传，这些举措加盟商须大力配合才能有效的进展。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px">十三、进行试营业</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 试营业期间一切按照正式的操作规程进行，发现问题及时解决，逐步完善店内的软件及硬件服务，要做到尽善尽美。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px">十四、正式营业</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 通过试营业的阶段，完善各项操作规程后，即可正式营业。公司带店人员协助加盟商共同完善管理，直到店内一切步入正轨后，带店人员方可返回。 </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        康体超市
+                                        <p style="text-indent: 0">
+                                            <b style="font-size: 20px">恒健康体超市的创业优势：</b>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange">快速招商--开启零风险股东营销模式</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 恒健康体养生超市倡导股东营销模式，实现开业极速招商，开业即能爆满。开业当天招商会、大股东选拔会、千人小股东应聘会、小股东挑战赛等系列运营方案同时实施，当天完成。开业当天客源排队，第二天、第三天……继续爆满，这就是恒健零风险超市运营模式。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange">零风险投资--开业即回收成本</b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 恒健康体零风险“超市运营模式”，让投资人远离投资风险，一次投资开业即回收成本，根据场地大小，设置出招纳股东数量，单户设备配备（氧动力结肠水疗、细胞浴、神经激活），可以开展未病防治、亚健康调理、慢性病调理、卵巢保养、提臀缩阴等项目。设备、装修、家具三项投资总值除股东数量，算出每户资金额度，股东可以一次性买断，也可以分期付款，分期付款者必须提交10万押金，让投资快速回收远离风险，真正做到零投资、；零运营成本，月月纯利50%的高收入。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange"> 零风险创业--远离亏本风险 </b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 恒健康体零风险超市运营模式，让投资人远离月底亏损。设备、装修、家具虽然回收了成本，但是还有每月的房租、水电、管理费、物业费等等多项开支，这些也需要零亏损保障。每位股东按面积收取的管理费足以抵消这些开支。当月底结算的时候，这些管理费用将在股东每户总收入中扣除，作为投资人，这时候你已经没有成本的担忧，剩下的利润5:5分成，那么你的50%毛收入就会转变成纯利 </span>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange"> 股东式营销--确保每天爆满 </b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 一个好的商业模式是共赢的，每一个商业模式的参与者都会得到更多的利润，或者得到更多更好的服务。那么，如何实现“用最少，得最多”的商业模式？传统的营销模式在当今复杂多变的市场面前几乎无效，而且需要花费高额的广告费用。在一个企业开始起步的阶段，想快速组建一个团队难，想快速组建一个狼性团队更难。恒健康体零风险股东营销模式就是以零薪酬汇聚人才，这个模式的优越性在于，每天可以倍增上百人，很快发展几万、几十万股东，大家都在恒健康体这个平台上发展自己的事业，所有的参与者都是为自己的事业而努力，股东们比高薪聘请的中高层管理人员会更加努力工作，强大的人脉关系想不爆满都难。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange"> 完全克隆成熟模式--让成功更简单 </b>
+                                            <br/>
+                                            <span style="font-size: 16px"> 恒健康体总部会向合作者提供恒健康体美容养生超市所有的股东式营销方案和管理方案，让你开业前就能掌握运营流程，开业后快速使自己的养生空间赚钱。经营过程中我们还有营销专家提供一对一的服务，让在轻松赚钱的同时，也使自己的经验更丰富。 </span>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange"> 恒健零风险创业传统--商业经营的成功保障 </b>
+                                            <br/>
+                                            <span style="font-size: 16px">1.零风险投资保证金模式，确保经营参与者创业无忧 </span>
+                                            <br/>
+                                            <span style="font-size: 16px"> 2.零风险经营，开业回收成本，无费用经营 </span>
+                                            <br/>
+                                            <span style="font-size: 16px"> 3.零薪酬汇集人才，让万人股东参与经营，盈利无风险 </span>
+                                            <br/>
+                                            <span style="font-size: 16px"> 4.中科恒健集团扶持，完全克隆成熟模式，让成功更简单 </span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        健康城/康养城
+                                        <p style="text-indent: 0">
+                                            <b style="font-size: 20px">恒健康体健康城营销方案</b>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange">一、定位</b>
+                                            <br/>
+                                            <b style="font-size: 16px">1、项目定位</b>
+                                            <br/>
+                                            <span style="font-size: 16px">两大项目：慢病调理、女子调理</span>
+                                            <br/>
+                                            <span style="font-size: 16px">针对人群：中老年人、25岁以上女性</span>
+                                            <br/>
+                                            <b style="font-size: 16px">2、营销定位</b>
+                                            <br/>
+                                            <span style="font-size: 16px">中老年人营销定位：体验式营销+会销</span>
+                                            <br/>
+                                            <span style="font-size: 16px">女性营销定位：以“休闲”做为发起点，以美容、抗衰、青春保鲜、妇科调理为服务为主</span>
+                                            <br/>
+                                            <b style="font-size: 16px">3、推广定位</b>
+                                            <br/>
+                                            <span style="font-size: 16px">两个目标人群到位后，第三阶段实行“裂变”计划推行创业式营销</span>
+                                            <br/>
+                                            <b style="font-size: 16px">4、招商定位</b>
+                                            <br/>
+                                            <span style="font-size: 16px">在顾客认可项目和服务的前提下发展“种”子和代理，推动全国加盟招商工作</span>
+                                            <br/>
+                                            <b style="font-size: 16px">5、模式定位</b>
+                                            <br/>
+                                            <span style="font-size: 16px">市区内健康城规划：面积2000平米以上，规划为法国魔浴城+健康城，以休闲为吸引客户的手段，以健康调理为实现层级消费。</span>
+                                            <br/>
+                                            <span style="font-size: 16px">市区外康养游基地规划：选址以离市区10公里以上的城外位置，具备住宿300张床位以上，风景优美原生态，交通比较便利，功能上实现旅游、养生、休闲、养老、健康调理能功能，主要模式为康养游+养老。</span>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange">二、项目推广主题</b>
+                                            <br/>
+                                            <span style="font-size: 16px">1、店庆2周年回馈新老顾客，（为期1个月）。</span>
+                                            <br/>
+                                            <span style="font-size: 16px">2、恒健康体—把健康奉献给爹娘（弘扬传统孝文化、爱心助老、促社会和谐文明）。</span>
+                                            <br/>
+                                            <span style="font-size: 16px">3、恒健康体女子保鲜---美丽容颜、美丽人生（从内到外调理，健康美才是最美）。</span>
+                                            <br/>
+                                            <span style="font-size: 16px">4、爱父母、送健康，恒健康体全城十万老人公益健康工程正式启动，健康调理天天免费送</span>
+                                            <br/>
+                                            <span style="font-size: 16px">5、海佑此亭古、济南美女多，恒健康体靓丽泉城公益活动正式开幕</span>
+                                            <br/>
+                                            <b style="font-size: 18px;color: orange">三、会员卡设定</b>
+                                            <br/>
+                                            <span style="font-size: 16px">自助孝心卡（面值980元）、青葱岁月卡（面值1万元）、美丽人生卡（面值3万元）、幸福家庭卡（面值5万元）、会员积分卡、健康调理卡（调理套餐）</span>
+                                            <br/>
+                                            <span style="font-size: 16px">健康中国免费公益体验券（面值380元）</span>
+                                            <br/>
+                                            <span style="font-size: 16px">1、凭此券可享受免费健康检测、健康咨询1次</span>
+                                            <br/>
+                                            <span style="font-size: 16px">2、凭此券可享受三次（每次时间不超过4小时）免费自助健康调理</span>
+                                            <br/>
+                                            <span style="font-size: 16px">3、此券有效期为一个月（自2016年 月 日至2016年 月 日止）</span>
+                                            <br/>
+                                            <span style="font-size: 16px">4、店长签字</span>
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="conRight">
+                        <h4>云管家链接</h4>
+                        <ul class="piclist">
+                            <li style="text-align: center">
+                                <a href="http://116.1.214.29:9882/" target="_blank">
+                                    <img src="img/business/yunguanjia0.png" alt="健康云管家" width="200" height="200" title="健康云管家"/>
+                                </a>
+                                <br/>
+                                <span class="ytext">健康云管家</span>
+                            </li>
+                            <li style="text-align: center">
+                                <a href="http://116.1.214.29:9883/" target="_blank">
+                                    <img src="img/business/yunshangcheng.png" alt="健康云管家商城" width="200" height="200" title="健康云管家商城"/>
+                                </a>
+                                <br/>
+                                <span class="ytext">健康云管家商城</span>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="con_clock">
+                                    <canvas id="clock" height="150px" width="150px">
+                                        该浏览器不支持canvas，请更换浏览器重试
+                                    </canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <footer>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="bottomLeft">
+                        <a href="index.html"><img src="img/common/logo1.png" alt="logo" title="主页"/></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="bottomCenter">
+                        <ul class="row">
+                            <li class="col-md-2"><a href="about-us.html">集团概况</a></li>
+                            <li class="col-md-2"><a href="wenquankangyang.html">旗下产业</a></li>
+                            <li class="col-md-2"><a href="lvyoucheng_join.html">项目共享</a></li>
+                            <li class="col-md-2"><a href="news.html">新闻资讯</a></li>
+                            <li class="col-md-2"><a href="contact.html">联系我们</a></li>
+                            <li class="col-md-2"><a href="legal-statement.html">法律声明</a></li>
+                        </ul>
+                        <div class="text">
+                            <p>版权所有：中科恒健集团</p>
+                            <p>
+                                电话：400-683-8881 企业邮箱：zonk888@163.com &nbsp;&nbsp;<br/>
+                                鲁ICP备11008778号
+                                <a href="http://www.cnzz.com/stat/website.php?web_id=5428666" target="_blank" title="站长统计"><img style="margin-left: 3px;margin-top: 5px" border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif"></a>
+                                <a href="http://tongji.baidu.com/hm-web/welcome/ico?s=9dd65c158147d11079d788c32d309659" target="_blank"><img border="0" src="http://eiv.baidu.com/hmt/icon/21.gif" width="20" height="20"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bottomRight">
+                        <a><img src="img/common/code.jpg" alt="二维码" width="120" height="120"/></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!--右侧悬浮栏-->
+<div id="fix">
+    <ul>
+        <li class="liuyan"><a></a></li>
+        <li class="wechat"><a></a></li>
+        <li class="qq"><a></a></li>
+        <li class="top"><a id="btn_top"></a></li>
+    </ul>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/meny.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/common.js"></script>
+<script>
+    /*导航*/
+    var meny = Meny.create({
+        menuElement: document.querySelector( '.meny' ),
+        contentsElement: document.querySelector( '.contents' ),
+        position: Meny.getQuery().p || 'left',
+        height: 200,
+        width: 260,
+        threshold: 40,
+        mouse: true,
+        touch: true
+    });
+    if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+        var contents = document.querySelector( '.contents' );
+        contents.style.padding = '0px';
+        contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+    }
+</script>
+<!-- 代码部分end -->
 </body>
 </html>
